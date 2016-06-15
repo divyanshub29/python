@@ -87,3 +87,32 @@ def mergesort_array(A,result,start,end):
 a=[2,1,3,9,87,6,5,5,4]
 mergesort(a)
 print a
+
+
+
+
+
+'''======QUICK SORT======='''''
+
+#a-->array si-->startind index ei-->ending index
+
+def quicksort(a,si,ei):
+    if si<ei:
+        pi=partition(a,si,ei)
+        quicksort(a,si,pi-1)
+        quicksort(a,pi+1,ei)
+
+def partiton(a,si,ei):
+    x=a[ei]
+    i=si-1
+    for j in range(si,ei):
+        if a[j] <=x:
+            i+=1
+
+            a[i],a[j]=a[j],a[i]
+        a[i+1],a[ei]=a[ei],a[i+1]
+    return i+1
+
+
+
+
