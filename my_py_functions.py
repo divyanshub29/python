@@ -24,6 +24,16 @@ def gcd(a, b):
     return gcd(b, a % b) 
 
 
+
+'''====GCD of Two Numbers -Aliter=======''''
+def gcda(a,b):
+        while(b!=0):
+                c=a%b
+                a=b
+                b=c
+        return a
+
+
 '''========CONVERT INT TO A STRING IN ANY BASE==========='''
 
 def toStr(number,base):
