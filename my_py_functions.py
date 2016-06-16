@@ -37,34 +37,31 @@ def toStr(number,base):
 
 '''======ANAGRAM TESTER==========='''
 def anagram(s1,s2):
+
         if len(s1)!=len(s2):
                 return False
-        for key in s1:
-                if key not in s2:
-                        return False
-        for item in s2:
-                if item not in s1:
-                        return False
+        s1=sorted(s1)
+        s2=sorted(s2)
+        if s1!=s2:
+            return False
         return True
+
 
 
 '''====ANAGRAM LEXICOGRAPHICALLY ARRANGED===='''
 def anagramlex(s1,s2,value=0):
         #value:Lexicographically smallest or biggest
         #value: max=1 or min=0
-
-        if anagram(s1,s2)==True:
-                if value==0:
-                        
-                        s=''.join(sorted(s1))
-                        return s
-                
-                else:
-                        s=''.join(sorted(s1,reverse=True))
-                        return s
-                        
+                if len(s1)!=len(s2):
+                return False
+        s1=sorted(s1)
+        s2=sorted(s2)
+        if s1!=s2:
+            return False
+        if value==0:
+                return s1
         else:
-                return "Not an Anagram"
+                return s1[::-1]
 
 
 '''======check for pair in array with sum equal to some value======'''
@@ -82,5 +79,19 @@ def checkpair(arr,size,add):
         return 0
 
 
+'''=======LCM (LCM OF A RANGE ALSO) AND GCD========'''
+def gcd(a, b):
+    """Return greatest common divisor using Euclid's Algorithm."""
+    while b:      
+        a, b = b, a % b
+    return a
 
+def lcm(a, b):
+    """Return lowest common multiple."""
+    return a * b // gcd(a, b)
 
+def lcmm(*args):
+    """Return lcm of args."""   
+    return reduce(lcm, args)
+
+#print lcmm(*range(1,502))
