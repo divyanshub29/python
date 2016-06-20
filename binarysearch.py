@@ -17,3 +17,14 @@ arr=[1,5,6,7,8,9,11,23,45,56]
 print binarysearch(arr,11)
 print binarysearch(arr,9)
 print binarysearch(arr,10)
+
+
+def insertInPlace(a,target):
+    #insert target into it's proper location
+    idx=binarysearch(a,target)
+    if idx<0:
+        a.insert(-(idx+1),target)
+        return
+
+    a.insert(idx,target)
+    
