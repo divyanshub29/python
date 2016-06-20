@@ -124,3 +124,17 @@ def lcmm(*args):
    del temp[0]
    add=add-number
    return add,temp
+
+
+'''====Prime Tester==='''
+def prime(number):
+        j=2
+        if number<=1:
+                return False
+        q=int(number**0.5)+1
+        while j<q:
+                if number%j==0:
+                        return False
+                j=j+1
+        return True
+
