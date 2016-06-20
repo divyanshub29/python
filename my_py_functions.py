@@ -105,3 +105,22 @@ def lcmm(*args):
     return reduce(lcm, args)
 
 #print lcmm(*range(1,502))
+
+
+
+'''====Sum of Divisors==='''
+'''Sum and list of divisors'''
+ def sumofdiv(number):
+   add=0
+   temp=[]
+   a=int(number**0.5)+1
+   for i in range(1,a):
+       if number%i==0:
+           add=add+i
+           if int(number/i)!=i:
+		   add=add+(number/i)
+		   temp.append(number/i)
+           temp.append(i)
+   del temp[0]
+   add=add-number
+   return add,temp
