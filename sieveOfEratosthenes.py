@@ -14,4 +14,11 @@ def sieveOfEratosthenes(n):
     primes.insert(0,2)
     return filter(None, primes)
 
-arr=((sieveOfEratosthenes(104752)))#change the number as per requirement
+arr=((sieveOfEratosthenes(550)))#change the number as per requirement
+
+i=1
+for item in arr:
+    print i,
+    print " ",
+    print item
+    i=i+1
