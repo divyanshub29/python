@@ -1,4 +1,4 @@
-def primefactors(n):
+def prime(n):
     while n%2==0:
         print 2,
         n=n/2
@@ -14,4 +14,4 @@ def primefactors(n):
 
     if n>2:
         print n
-primefactors(315)
+prime(315)
