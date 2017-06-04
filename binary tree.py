@@ -114,7 +114,7 @@ class BinaryTree:
         
 
 def balancedTree(a):
-    #create balanced BT from orderedvcollection
+    #create balanced BT from ordered collection
 
     bt=BinaryTree()
 
@@ -123,7 +123,7 @@ def balancedTree(a):
     return bt
 
 def addRange(bt,a,low,high):
-    #add range to the bit in way that bt remaibs balanced
+    #add range to the bit in way that bt remains balanced
 
     if low <= hihg:
         mid=(low+high)/2
