@@ -6,7 +6,7 @@ def sieveOfEratosthenes(n):
     for base in xrange(len(primes)):
         if primes[base] is None:
             continue
-        if primes[base] >= sqrt(n): # stop at sqrt of n
+        if primes[base] > sqrt(n): # stop at sqrt of n
             break
 
         for i in xrange(base + (base + 1) * primes[base], len(primes), primes[base]):
@@ -14,7 +14,7 @@ def sieveOfEratosthenes(n):
     primes.insert(0,2)
     return filter(None, primes)
 
-arr=((sieveOfEratosthenes(550)))#change the number as per requirement
+arr=((sieveOfEratosthenes(100)))#change the number as per requirement
 
 i=1
 for item in arr:
