@@ -22,7 +22,7 @@ def partition(A, si, ei):
          
     return i+1
 
-'''===Alternate==='''
+'''===Alternate Implementation==='''
 def quicksort(arr):
     if len(arr) <= 1:
         return arr
