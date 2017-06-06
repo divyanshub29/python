@@ -11,19 +11,19 @@ def quickSort(A, si, ei):
 
 # Utility function for partitioning the array(used in quick sort)
 def partition(A, si, ei):
-    x = A[ei]
+    x = A[ei] # x is pivot, last element
     i = (si-1)
     for j in range(si,ei):
         if A[j] <= x:
             i += 1
             A[i], A[j] = A[j], A[i]
  
-        A[i+1], A[ei] = A[ei], A[i+1]
+    A[i+1], A[ei] = A[ei], A[i+1]
          
     return i+1
 
 '''===Alternate Implementation==='''
-def quicksort(arr):
+def quicksort1(arr):
     if len(arr) <= 1:
         return arr
     pivot = arr[len(arr) / 2]
