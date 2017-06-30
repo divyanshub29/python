@@ -13,6 +13,7 @@ Algorithms, Data Structures, Mathematics and Solved Standard Problems in Python 
 * [Miscellaneous](#miscellaneous)
 * [String Algorithms](#string-algorithms)
 
+
 ## Advanced Data Structures
 * Fenwick Tree or BIT
 * Segment Tree with Lazy Propagation
@@ -46,14 +47,20 @@ Algorithms, Data Structures, Mathematics and Solved Standard Problems in Python 
 * Kruskal MST
 
 ## Mathematics
+* CRT (Chinese Remainder Theorem)
+* Diophantine Equations
 * Divisors of a factorial
 * Exponentiation by Squaring
+* Extended Euclid
 * Fermat's Little Theorem
 * Miller Rabin 
+* MMI (Modulo Multiplicative Inverse)
+* Modulo (Modulo Properties)
 * my_py_functions (contains functions like gcd,lcm etc)
 * Primality Test
 * Prime Factors
 * Sieve of Eratothenes
+* Sieve on Segment
 * Totient
 * Totient for small numbers
 
